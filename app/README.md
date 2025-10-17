@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 🏡 Restopia Homestay Website
 
-First, run the development server:
+A modern, responsive **Next.js** website for **Restopia Homestay**, designed with a **black & gold** premium theme.
+It features animated sections, smooth transitions, and dynamic pages like **Home**, **About Us**, **Gallery**, and **Contact Us** — all built using **Tailwind CSS** and **Framer Motion**.
+
+---
+
+### 🚀 Tech Stack
+
+* **Next.js 14+** (App Router)
+* **React**
+* **Tailwind CSS**
+* **Framer Motion**
+* **Lucide Icons**
+
+---
+
+### 🧩 Folder Structure
+
+```
+RestopiaHomestay/
+│
+├── app/
+│   ├── AboutUs/page.tsx
+│   ├── ContactUs/page.tsx
+│   ├── Gallery/page.tsx
+│   ├── Home/page.tsx
+│   ├── layout.tsx
+│   └── globals.css
+│
+├── public/
+│   ├── images/
+│   │   ├── home1.jpg
+│   │   ├── gallery1.jpg … gallery6.jpg
+│   │   ├── user1.jpg, user2.jpg, user3.jpg
+│   └── favicon.ico
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│
+├── package.json
+├── README.md
+└── next.config.mjs
+```
+
+---
+
+### ⚙️ Getting Started
+
+Follow these steps to run the project on your local machine 👇
+
+#### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Ompaliwal/RestopiaHomestay.git
+```
+
+#### 2️⃣ Navigate into the folder
+
+```bash
+cd RestopiaHomestay
+```
+
+#### 3️⃣ Install dependencies
+
+Make sure you have **Node.js (v18 or later)** and **npm** installed.
+
+Then run:
+
+```bash
+npm install
+```
+
+#### 4️⃣ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 5️⃣ Open in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+http://localhost:3000
+```
 
-## Learn More
+✅ You should see the **Restopia Homestay** website running locally!
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🧠 Common Commands
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command         | Description                    |
+| --------------- | ------------------------------ |
+| `npm run dev`   | Starts development server      |
+| `npm run build` | Builds for production          |
+| `npm start`     | Runs production build          |
+| `npm run lint`  | Checks for code linting issues |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📦 Dependencies Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Package                  | Purpose                     |
+| ------------------------ | --------------------------- |
+| **next**                 | Framework for React SSR/SSG |
+| **react**, **react-dom** | Core React libraries        |
+| **tailwindcss**          | Styling framework           |
+| **framer-motion**        | Animations and transitions  |
+| **lucide-react**         | Modern icon library         |
+
+---
+
+### 🧑‍💻 Developer Notes
+
+* All theme colors and styles are defined in `app/globals.css` using CSS variables.
+* Page routes (`/AboutUs`, `/Gallery`, `/ContactUs`) are handled via Next.js App Router.
+* Icons and motion effects are used for consistent branding.
+
+---
+
+### 🌐 Deployment
+
+You can deploy easily using:
+
+* [**Vercel**](https://vercel.com/) (recommended)
+* or any Node.js hosting platform
+
+Just connect this repo and click **Deploy**.
+
+---
+
+
